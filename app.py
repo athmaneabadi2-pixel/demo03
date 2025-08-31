@@ -32,7 +32,7 @@ def whatsapp_webhook():
     text = incoming.get("Body") or incoming.get("text") or ""
     profile = memory.get_profile()
     reply = generate_reply(text, profile)
-    # Ici tu appellerais Twilio pour renvoyer la réponse
+    # Ici tu appellerais Twilio pour renvoyer la réponse 
     return reply, 200
 
 if __name__ == "__main__":
